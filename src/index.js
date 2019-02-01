@@ -20,6 +20,7 @@ module.exports = {
             // .split('bool:').join('stock bool ')
             .split('Handle:').join('Handle ')
             .split('public Action:').join('public Action ')
+            .replace(/new (.*?):/, "$1")
         ;
 
         console.log(code);

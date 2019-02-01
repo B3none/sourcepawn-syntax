@@ -16,8 +16,9 @@ module.exports = {
             .split('new Handle:').join('Handle ')
             .split('new bool:').join('bool ')
             .split('new Float:').join('float ')
-            .split('bool:') // Check for bools in brackets
-            .split('bool:').join('stock bool ')
+            // .split('bool:') // Check for bools in brackets
+            // .split('bool:').join('stock bool ')
+            .split('Handle:').join('Handle ')
             .split('public Action:').join('public Action ')
         ;
 
